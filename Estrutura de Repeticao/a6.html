@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const input = parseInt(prompt('Digite um número inteiro positivo: '));
+
+            if (input > 0) {
+                let divisor = 1;
+                document.writeln(`Divisores de ${input}:`);
+
+                while (divisor <= input) {
+                    if (input % divisor === 0) {
+                        document.writeln(divisor);
+                    }
+                    divisor++;
+                }
+            } else {
+                document.writeln('Por favor, insira um número inteiro positivo.');
+            }
+        </script>
+</body>
+</html>

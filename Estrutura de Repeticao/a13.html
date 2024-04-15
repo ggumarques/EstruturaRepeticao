@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number = parseInt(prompt('Digite um número inteiro: '));
+        let n = Math.abs(number); 
+
+        document.writeln(`Os dígitos do número ${number} são:`);
+
+        while (n > 0) {
+            const digit = n % 10;
+            document.writeln(digit);
+            n = Math.floor(n / 10);
+        }
+    </script>
+</body>
+</html>

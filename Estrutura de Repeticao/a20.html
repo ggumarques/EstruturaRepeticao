@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const numero = parseInt(prompt("Digite um número inteiro:"));
+
+            let multiplicador = 0;
+
+            do {
+                const resultado = numero * multiplicador;
+                document.writeln(`${numero} x ${multiplicador} = ${resultado}`);
+                multiplicador++;
+            } while (multiplicador <= 10);
+
+    </script>
+</body>
+</html>

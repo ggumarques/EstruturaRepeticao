@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const number = parseInt(prompt('Digite um número inteiro: '));
+            let isPrime = true;
+            if (number === 1) {
+                document.writeln('1 não é um número primo nem composto.');
+            } else if (number > 1) {
+
+                let i = 2;
+                while (i < number) {
+                    if (number % i === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                    i++;
+                }
+
+                if (isPrime) {
+                    document.writeln(`${number} é um número primo.`);
+                } else {
+                    document.writeln(`${number} não é um número primo.`);
+                }
+            } else {
+                document.writeln('O número não é um número primo.');
+            }
+
+    </script>
+</body>
+</html>

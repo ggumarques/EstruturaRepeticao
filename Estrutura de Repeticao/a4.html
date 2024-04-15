@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let count = 1;
+        let sum = 0;
+
+        while (count <= 5) {
+            const input = prompt(`Digite o ${count}º número inteiro:`);
+            const number = parseInt(input);
+
+            if (!isNaN(number)) {
+                sum += number;
+                count++;
+            } else {
+                alert("Por favor, insira um número inteiro válido.");
+            }
+        }
+        const average = sum / 5;
+        document.writeln(`A média dos números é: ${average}`);
+    </script>
+</body>
+</html>

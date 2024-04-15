@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let somaIdades = 0;
+        let contador = 0;
+
+        do {
+            const nome = prompt("Digite o nome da pessoa:");
+            const idade = parseInt(prompt("Digite a idade da pessoa:"));
+            somaIdades += idade;
+
+            contador++;
+        } while (contador < 5);
+
+        const mediaIdades = somaIdades / 5;
+
+        document.writeln(`A média das idades é: ${mediaIdades.toFixed(2)}`);
+    </script>
+</body>
+</html>

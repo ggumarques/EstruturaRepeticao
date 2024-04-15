@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularFatorialFor(num) {
+            let fatorial = 1;
+            for (let i = 1; i <= num; i++) {
+                fatorial *= i;
+            }
+            return fatorial;
+        }
+
+    const numeroInserido = parseInt(prompt("Digite um número inteiro:"));
+    const fatorialFor = calcularFatorialFor(numeroInserido);
+    document.writeln(`O fatorial de ${numeroInserido} é: ${fatorialFor}`);
+
+    </script>
+</body>
+</html>

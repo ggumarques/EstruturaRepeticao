@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const nterms = parseInt(prompt('Digite um número inteiro: '));
+            let n1 = 0;
+            let n2 = 1;
+
+            document.writeln('\nA sequência de Fibonacci é:');
+            document.writeln(n1, ',', n2, end = ', ');
+
+            for (let i = 2; i < nterms; i++) {
+                const next = n1 + n2;
+                document.writeln(next, end = ', ');
+                n1 = n2;
+                n2 = next;
+            }
+
+    </script>
+</body>
+</html>

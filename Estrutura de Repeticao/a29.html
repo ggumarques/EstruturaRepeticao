@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numero = parseInt(prompt("Digite um número inteiro positivo:"));
+        let resultado = 1;
+        let contador =  1;
+
+        do {
+            resultado *= contador; 
+            contador++; 
+        } while (contador <= numero);
+
+        document.writeln(`O fatorial de ${numero} é: ${resultado}`);
+
+    </script>
+</body>
+</html>

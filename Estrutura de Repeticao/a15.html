@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    let totalAge = 0;
+    let count = 0;
+
+    while (true) {
+        const name = prompt('Digite o nome da pessoa (ou "fim" para encerrar):');
+        if (name.toLowerCase() === 'fim') {
+            break;
+        }
+
+        const age = parseInt(prompt(`Digite a idade de ${name}:`));
+        if (!isNaN(age)) {
+            totalAge += age;
+            count++;
+        } else {
+            alert('Por favor, insira uma idade válida.');
+        }
+    }
+
+    if (count > 0) {
+        const averageAge = totalAge / count;
+        alert(`A média das idades é: ${averageAge.toFixed(2)}`);
+    } else {
+        alert('Nenhuma idade válida foi inserida.');
+    }
+
+    </script>
+</body>
+</html>
